@@ -1,0 +1,101 @@
+* {
+  font-family: "Titillium Web", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 80px auto;
+  width: 20vw;
+  background: whitesmoke;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.checked {
+  text-decoration: line-through;
+  background: #838282 !important;
+}
+
+input[type="button"] {
+  cursor: pointer;
+  background: white;
+  color: grey;
+  border: none;
+  font-weight: bold;
+  padding: 1px 4px;
+}
+
+input[type="button"]:hover {
+  background: #707070;
+  color: white;
+}
+
+#error {
+  display: none;
+  color: red;
+  font-weight: bold;
+}
+
+#item_container {
+  margin-top: 15px;
+  padding-top: 10px;
+  border-top: 1px solid black;
+  list-style: none;
+}
+
+#item_container li {
+  display: -ms-grid;
+  display: grid;
+  background: #e7e6e6;
+  padding: 1px 7px;
+  border-radius: 6px;
+  -ms-grid-columns: 80% 10% 10%;
+      grid-template-columns: 80% 10% 10%;
+  margin-bottom: 3px;
+}
+
+#item_container li:hover {
+  background: #cfcece;
+}
+
+#item_container li p {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+}
+
+#item_container li span {
+  text-align: center;
+}
+
+#item_container li span .fa-times {
+  color: red;
+  cursor: pointer;
+}
+
+#item_container li span .fa-times:hover {
+  color: #750000;
+}
+
+#item_container li span .fa-check {
+  color: #00f300;
+  cursor: pointer;
+}
+
+#item_container li span .fa-check:hover {
+  color: green;
+}
+
+#item_container li #archive {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3 / 4;
+}
+
+#item_container li #check {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+}
+/*# sourceMappingURL=style.css.map */
